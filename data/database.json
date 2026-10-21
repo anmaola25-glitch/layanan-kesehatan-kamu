@@ -1,0 +1,679 @@
+{
+  "admin": {
+    "username": "mantri",
+    "email": "admin@mantri.clinic",
+    "passwordHash": "d146f5e175086d65c25626ae1aceb0c9f0cce1801ee2e0d513f563aaf87663dfd5ddcc6979e47a436890534582d047ba9005f5749f85a8d0fc7268dbec09c50a",
+    "salt": "mantri_secure_salt_2025",
+    "name": "Mantri Husada, S.Kep., Ns.",
+    "role": "Praktik Mandiri Mantri"
+  },
+  "settings": {
+    "practiceName": "Praktik Mandiri Mantri",
+    "mantriName": "Mantri Husada, S.Kep., Ns.",
+    "mantriTitle": "Praktik Perawat Mandiri Terdaftar",
+    "phone": "0812-3456-7890",
+    "address": "Jl. Kesehatan No. 12, Kel. Sejahtera, Kec. Husada",
+    "adminEmail": "anmaola25@gmail.com",
+    "dailyQuota": 40,
+    "isRegistrationOpen": true,
+    "prefix": "A",
+    "openingHours": {
+      "weekdays": "07:00 - 14:00",
+      "sunday": "Tutup"
+    },
+    "emailNotificationsEnabled": true,
+    "smtpConfigured": true
+  },
+  "services": [
+    {
+      "id": "srv-1",
+      "name": "Pemeriksaan Umum",
+      "description": "Pemeriksaan keluhan kesehatan umum, tensi darah, konsultasi keluhan fisik dan resep obat.",
+      "estimatedMinutes": 15,
+      "price": 35000,
+      "isActive": true
+    },
+    {
+      "id": "srv-2",
+      "name": "Konsultasi Keluarga",
+      "description": "Konsultasi kesehatan keluarga, gizi, penanganan penyakit kronis, dan pola hidup sehat.",
+      "estimatedMinutes": 20,
+      "price": 40000,
+      "isActive": true
+    },
+    {
+      "id": "srv-3",
+      "name": "Cek Gula Darah",
+      "description": "Pemeriksaan kadar glukosa darah puasa / sewaktu dengan alat uji digital akurat.",
+      "estimatedMinutes": 10,
+      "price": 20000,
+      "isActive": true
+    },
+    {
+      "id": "srv-4",
+      "name": "Cek Kolesterol",
+      "description": "Pemeriksaan profil kadar kolesterol total darah cepat dan akurat.",
+      "estimatedMinutes": 10,
+      "price": 25000,
+      "isActive": true
+    },
+    {
+      "id": "srv-5",
+      "name": "Cek Asam Urat",
+      "description": "Skrining kadar asam urat dalam darah untuk penanganan nyeri sendi.",
+      "estimatedMinutes": 10,
+      "price": 20000,
+      "isActive": true
+    },
+    {
+      "id": "srv-6",
+      "name": "Perawatan Luka Ringan",
+      "description": "Pembersihan luka, antiseptik, ganti perban steril dan edukasi perawatan luka.",
+      "estimatedMinutes": 20,
+      "price": 30000,
+      "isActive": true
+    },
+    {
+      "id": "srv-7",
+      "name": "Suntik Vitamin / Imunitas",
+      "description": "Pemberian injeksi vitamin C dan neurobion untuk menjaga daya tahan tubuh.",
+      "estimatedMinutes": 15,
+      "price": 45000,
+      "isActive": true
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-1792589441485",
+      "applicationCode": "PA2610210006",
+      "fullName": "Ahmad Fauzi",
+      "email": "ahmadfauzi@gmail.com",
+      "phone": "081234567890",
+      "serviceId": "srv-1",
+      "serviceName": "Pemeriksaan Umum",
+      "status": "Disetujui",
+      "appliedAt": "2026-10-21T13:30:41.485Z",
+      "history": [
+        {
+          "status": "Pengajuan dibuat",
+          "timestamp": "2026-10-21T13:30:41.485Z",
+          "actor": "Pasien (Ahmad Fauzi)",
+          "notes": "Pendaftaran mandiri melalui situs web"
+        },
+        {
+          "status": "Menunggu Persetujuan",
+          "timestamp": "2026-10-21T13:30:41.485Z",
+          "actor": "Sistem"
+        },
+        {
+          "status": "Disetujui",
+          "timestamp": "2026-10-21T13:31:12.396Z",
+          "actor": "Mantri Husada, S.Kep., Ns.",
+          "notes": "Diterbitkan nomor antrean resmi A006"
+        }
+      ],
+      "accessToken": "da383e300f8d4915dd9bdbaf0f583a92",
+      "queueNumber": "A006",
+      "processedAt": "2026-10-21T13:31:12.396Z",
+      "processedBy": "Mantri Husada, S.Kep., Ns."
+    },
+    {
+      "id": "app-003",
+      "applicationCode": "PA2506170003",
+      "fullName": "Siti Aisyah",
+      "email": "siti@gmail.com",
+      "phone": "081234567891",
+      "serviceId": "srv-1",
+      "serviceName": "Pemeriksaan Umum",
+      "status": "Menunggu Persetujuan",
+      "appliedAt": "2026-10-21T12:55:14.418Z",
+      "history": [
+        {
+          "status": "Pengajuan dibuat",
+          "timestamp": "2026-10-21T12:55:14.418Z",
+          "actor": "Pasien (Siti Aisyah)",
+          "notes": "Pengajuan online via web"
+        },
+        {
+          "status": "Menunggu persetujuan",
+          "timestamp": "2026-10-21T12:55:14.418Z",
+          "actor": "Sistem Antrean"
+        }
+      ],
+      "accessToken": "token_pa2506170003"
+    },
+    {
+      "id": "app-002",
+      "applicationCode": "PA2506170002",
+      "fullName": "Budi Santoso",
+      "email": "budi@gmail.com",
+      "phone": "081298765432",
+      "serviceId": "srv-2",
+      "serviceName": "Konsultasi Keluarga",
+      "status": "Menunggu Persetujuan",
+      "appliedAt": "2026-10-21T12:45:14.418Z",
+      "history": [
+        {
+          "status": "Pengajuan dibuat",
+          "timestamp": "2026-10-21T12:45:14.418Z",
+          "actor": "Pasien (Budi Santoso)"
+        }
+      ],
+      "accessToken": "token_pa2506170002"
+    },
+    {
+      "id": "app-001",
+      "applicationCode": "PA2506170001",
+      "fullName": "Rina Lestari",
+      "email": "rina@gmail.com",
+      "phone": "085711223344",
+      "serviceId": "srv-1",
+      "serviceName": "Pemeriksaan Umum",
+      "status": "Menunggu Persetujuan",
+      "appliedAt": "2026-10-21T12:30:14.418Z",
+      "history": [
+        {
+          "status": "Pengajuan dibuat",
+          "timestamp": "2026-10-21T12:30:14.418Z",
+          "actor": "Pasien (Rina Lestari)"
+        }
+      ],
+      "accessToken": "token_pa2506170001"
+    },
+    {
+      "id": "app-008",
+      "applicationCode": "PA2506160008",
+      "fullName": "Andi Pratama",
+      "email": "andi@gmail.com",
+      "phone": "081377889900",
+      "serviceId": "srv-3",
+      "serviceName": "Cek Gula Darah",
+      "status": "Disetujui",
+      "queueNumber": "A004",
+      "appliedAt": "2026-10-21T11:40:14.418Z",
+      "processedAt": "2026-10-21T12:10:14.418Z",
+      "processedBy": "Mantri Husada",
+      "history": [
+        {
+          "status": "Pengajuan dibuat",
+          "timestamp": "2026-10-21T11:40:14.418Z",
+          "actor": "Pasien (Andi Pratama)"
+        },
+        {
+          "status": "Disetujui",
+          "timestamp": "2026-10-21T12:10:14.418Z",
+          "actor": "Mantri Husada",
+          "notes": "Diterbitkan nomor antrean A004"
+        }
+      ],
+      "accessToken": "token_pa2506160008"
+    },
+    {
+      "id": "app-007",
+      "applicationCode": "PA2506160007",
+      "fullName": "Dewi Lestari",
+      "email": "dewi@gmail.com",
+      "phone": "081244556677",
+      "serviceId": "srv-4",
+      "serviceName": "Cek Kolesterol",
+      "status": "Disetujui",
+      "queueNumber": "A005",
+      "appliedAt": "2026-10-21T11:10:14.418Z",
+      "processedAt": "2026-10-21T11:50:14.418Z",
+      "processedBy": "Mantri Husada",
+      "history": [
+        {
+          "status": "Pengajuan dibuat",
+          "timestamp": "2026-10-21T11:10:14.418Z",
+          "actor": "Pasien (Dewi Lestari)"
+        },
+        {
+          "status": "Disetujui",
+          "timestamp": "2026-10-21T11:50:14.418Z",
+          "actor": "Mantri Husada",
+          "notes": "Diterbitkan nomor antrean A005"
+        }
+      ],
+      "accessToken": "token_pa2506160007"
+    }
+  ],
+  "queues": [
+    {
+      "id": "q-001",
+      "applicationId": "app-past-1",
+      "queueNumber": "A001",
+      "date": "2026-10-21",
+      "fullName": "Rina Lestari",
+      "email": "rina@gmail.com",
+      "phone": "085711223344",
+      "serviceName": "Pemeriksaan Umum",
+      "status": "Dipanggil",
+      "callCount": 2,
+      "calledAt": "2026-10-21T13:02:14.418Z",
+      "history": [
+        {
+          "status": "Menunggu Giliran",
+          "timestamp": "2026-10-21T12:20:14.418Z",
+          "actor": "Sistem"
+        },
+        {
+          "status": "Dipanggil (Panggilan ke-1)",
+          "timestamp": "2026-10-21T12:55:14.418Z",
+          "actor": "Mantri Husada"
+        },
+        {
+          "status": "Dipanggil (Panggilan ke-2)",
+          "timestamp": "2026-10-21T13:02:14.418Z",
+          "actor": "Mantri Husada"
+        }
+      ]
+    },
+    {
+      "id": "q-002",
+      "applicationId": "app-past-2",
+      "queueNumber": "A002",
+      "date": "2026-10-21",
+      "fullName": "Budi Santoso",
+      "email": "budi@gmail.com",
+      "phone": "081298765432",
+      "serviceName": "Cek Gula Darah",
+      "status": "Sedang Dilayani",
+      "callCount": 1,
+      "calledAt": "2026-10-21T12:50:14.418Z",
+      "serviceStartedAt": "2026-10-21T12:58:14.418Z",
+      "history": [
+        {
+          "status": "Menunggu Giliran",
+          "timestamp": "2026-10-21T12:25:14.418Z",
+          "actor": "Sistem"
+        },
+        {
+          "status": "Dipanggil",
+          "timestamp": "2026-10-21T12:50:14.418Z",
+          "actor": "Mantri Husada"
+        },
+        {
+          "status": "Sedang Dilayani",
+          "timestamp": "2026-10-21T12:58:14.418Z",
+          "actor": "Mantri Husada"
+        }
+      ]
+    },
+    {
+      "id": "q-003",
+      "applicationId": "app-003",
+      "queueNumber": "A003",
+      "date": "2026-10-21",
+      "fullName": "Siti Aisyah",
+      "email": "siti@gmail.com",
+      "phone": "081234567891",
+      "serviceName": "Konsultasi Keluarga",
+      "status": "Menunggu Giliran",
+      "callCount": 0,
+      "history": [
+        {
+          "status": "Menunggu Giliran",
+          "timestamp": "2026-10-21T12:40:14.418Z",
+          "actor": "Sistem"
+        }
+      ]
+    },
+    {
+      "id": "q-004",
+      "applicationId": "app-008",
+      "queueNumber": "A004",
+      "date": "2026-10-21",
+      "fullName": "Andi Pratama",
+      "email": "andi@gmail.com",
+      "phone": "081377889900",
+      "serviceName": "Pemeriksaan Umum",
+      "status": "Menunggu Giliran",
+      "callCount": 0,
+      "history": [
+        {
+          "status": "Menunggu Giliran",
+          "timestamp": "2026-10-21T12:50:14.418Z",
+          "actor": "Sistem"
+        }
+      ]
+    },
+    {
+      "id": "q-005",
+      "applicationId": "app-007",
+      "queueNumber": "A005",
+      "date": "2026-10-21",
+      "fullName": "Dewi Lestari",
+      "email": "dewi@gmail.com",
+      "phone": "081244556677",
+      "serviceName": "Cek Kolesterol",
+      "status": "Menunggu Giliran",
+      "callCount": 0,
+      "history": [
+        {
+          "status": "Menunggu Giliran",
+          "timestamp": "2026-10-21T13:00:14.418Z",
+          "actor": "Sistem"
+        }
+      ]
+    },
+    {
+      "id": "q-1792589472396",
+      "applicationId": "app-1792589441485",
+      "queueNumber": "A006",
+      "date": "2026-10-21",
+      "fullName": "Ahmad Fauzi",
+      "email": "ahmadfauzi@gmail.com",
+      "phone": "081234567890",
+      "serviceName": "Pemeriksaan Umum",
+      "status": "Menunggu Giliran",
+      "callCount": 0,
+      "history": [
+        {
+          "status": "Menunggu Giliran",
+          "timestamp": "2026-10-21T13:31:12.396Z",
+          "actor": "Sistem"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1792589441485",
+      "type": "NEW_APPLICATION",
+      "title": "Pengajuan antrean baru",
+      "message": "Ahmad Fauzi telah mengajukan antrean untuk Pemeriksaan Umum (PA2610210006)",
+      "referenceId": "app-1792589441485",
+      "isRead": false,
+      "createdAt": "2026-10-21T13:30:41.485Z"
+    },
+    {
+      "id": "notif-1",
+      "type": "NEW_APPLICATION",
+      "title": "Pengajuan antrean baru",
+      "message": "Siti Aisyah telah mengajukan antrean untuk Pemeriksaan Umum (PA2506170003)",
+      "referenceId": "app-003",
+      "isRead": false,
+      "createdAt": "2026-10-21T12:55:14.418Z"
+    },
+    {
+      "id": "notif-2",
+      "type": "APPROVED",
+      "title": "Pengajuan disetujui",
+      "message": "Budi Santoso disetujui untuk Konsultasi Keluarga (PA2506170002)",
+      "referenceId": "app-002",
+      "isRead": true,
+      "createdAt": "2026-10-21T12:25:14.418Z"
+    },
+    {
+      "id": "notif-3",
+      "type": "REJECTED",
+      "title": "Pengajuan ditolak",
+      "message": "Pengajuan Rina Lestari ditolak karena jam layanan telah tutup",
+      "referenceId": "app-001",
+      "isRead": true,
+      "createdAt": "2026-10-21T11:45:14.418Z"
+    }
+  ],
+  "emailLogs": [
+    {
+      "id": "email-1792589472396-dh3k",
+      "recipient": "ahmadfauzi@gmail.com",
+      "recipientName": "Ahmad Fauzi",
+      "subject": "Antrean Disetujui - No. A006 - Praktik Mandiri Mantri",
+      "templateType": "APPLICATION_APPROVED",
+      "status": "Terkirim",
+      "sentAt": "2026-10-21T13:31:12.396Z",
+      "htmlContent": "\n      <div style=\"font-family: 'Plus Jakarta Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #E8DFD0; border-radius: 12px; background: #FFFFFF;\">\n        <div style=\"text-align: center; margin-bottom: 20px;\">\n          <div style=\"display: inline-block; background: #43865A; color: white; width: 48px; height: 48px; line-height: 48px; border-radius: 50%; font-size: 24px; font-weight: bold;\">✓</div>\n          <h2 style=\"color: #34483D; margin: 12px 0 4px 0;\">Pengajuan Antrean Disetujui!</h2>\n          <p style=\"color: #747C75; margin: 0;\">Praktik Mandiri Mantri &bull; Mantri Husada, S.Kep., Ns.</p>\n        </div>\n        <p>Yth. Bpk/Ibu <strong>Ahmad Fauzi</strong>,</p>\n        <p>Kabar baik, pengajuan antrean pelayanan kesehatan Anda telah <strong>disetujui oleh Mantri</strong>. Berikut adalah nomor antrean resmi Anda:</p>\n        <div style=\"background: #F7F5EF; border: 2px dashed #718776; border-radius: 12px; text-align: center; padding: 20px; margin: 20px 0;\">\n          <p style=\"color: #747C75; margin: 0; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;\">Nomor Antrean Resmi Anda</p>\n          <h1 style=\"color: #34483D; font-size: 46px; margin: 8px 0; font-weight: 900; font-family: monospace;\">A006</h1>\n          <p style=\"color: #26332B; margin: 0; font-weight: 600; font-size: 15px;\">Pemeriksaan Umum</p>\n          <p style=\"color: #747C75; margin: 6px 0 0 0; font-size: 13px;\">Tanggal Pelayanan: <strong>2026-10-21</strong></p>\n        </div>\n        <div style=\"background: #FFFFFF; border: 1px solid #E8DFD0; border-radius: 8px; padding: 14px; font-size: 13px; line-height: 1.6;\">\n          <strong>Petunjuk Kehadiran:</strong>\n          <ul style=\"margin: 8px 0; padding-left: 20px; color: #26332B;\">\n            <li>Harap hadir di ruang praktik 10-15 menit sebelum giliran Anda.</li>\n            <li>Simpan kode pengajuan Anda: <strong>PA2610210006</strong> atau tunjukkan email ini kepada mantri saat dipanggil.</li>\n            <li>Status antrean dapat dipantau langsung secara real-time melalui website klinik.</li>\n          </ul>\n        </div>\n        <hr style=\"border: none; border-top: 1px solid #E8DFD0; margin: 24px 0;\" />\n        <p style=\"font-size: 12px; color: #747C75; text-align: center;\">Praktik Mandiri Mantri &bull; Jl. Kesehatan No. 12, Kel. Sejahtera, Kec. Husada &bull; Jam Buka: 07:00 - 14:00</p>\n      </div>\n    "
+    },
+    {
+      "id": "email-1792589441487-n7bg",
+      "recipient": "anmaola25@gmail.com",
+      "recipientName": "Mantri Husada",
+      "subject": "[Antrean Baru Masuk] PA2610210006 - Ahmad Fauzi (Pemeriksaan Umum)",
+      "templateType": "ADMIN_NEW_ALERT",
+      "status": "Terkirim",
+      "sentAt": "2026-10-21T13:30:41.486Z",
+      "htmlContent": "\n      <div style=\"font-family: 'Plus Jakarta Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #E8DFD0; border-radius: 12px; background: #FFFFFF;\">\n        <div style=\"background: #34483D; color: white; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n          <h3 style=\"margin: 0; color: #E8DFD0;\">Pemberitahuan Antrean Baru Masuk</h3>\n          <p style=\"margin: 4px 0 0 0; font-size: 13px; color: #FFFFFF;\">Praktik Mandiri Mantri Husada</p>\n        </div>\n        <p>Halo <strong>Mantri</strong>,</p>\n        <p>Ada pengajuan antrean pasien baru yang memerlukan tinjauan dan persetujuan Anda:</p>\n        <div style=\"background: #F7F5EF; padding: 16px; border-radius: 8px; margin: 16px 0; border: 1px solid #E8DFD0; font-size: 14px;\">\n          <p style=\"margin: 4px 0;\"><strong>Kode Pengajuan:</strong> <span style=\"font-family: monospace; font-weight: bold; color: #34483D;\">PA2610210006</span></p>\n          <p style=\"margin: 4px 0;\"><strong>Nama Pasien:</strong> Ahmad Fauzi</p>\n          <p style=\"margin: 4px 0;\"><strong>Email Pasien:</strong> ahmadfauzi@gmail.com</p>\n          <p style=\"margin: 4px 0;\"><strong>Nomor Telepon:</strong> 081234567890</p>\n          <p style=\"margin: 4px 0;\"><strong>Layanan yang Dipilih:</strong> Pemeriksaan Umum</p>\n          <p style=\"margin: 4px 0;\"><strong>Waktu Pendaftaran:</strong> 21/10/2026, 13.30.41</p>\n        </div>\n        <p>Silakan buka Dashboard Praktik Mandiri Mantri untuk menyetujui pengajuan ini dan menerbitkan nomor antrean resmi.</p>\n        <hr style=\"border: none; border-top: 1px solid #E8DFD0; margin: 20px 0;\" />\n        <p style=\"font-size: 12px; color: #747C75; text-align: center;\">Sistem Otomasi Antrean Praktik Mandiri Mantri</p>\n      </div>\n    "
+    },
+    {
+      "id": "email-1792589441486-92oe",
+      "recipient": "ahmadfauzi@gmail.com",
+      "recipientName": "Ahmad Fauzi",
+      "subject": "Konfirmasi Pengajuan Antrean [PA2610210006] - Praktik Mandiri Mantri",
+      "templateType": "APPLICATION_SUBMITTED",
+      "status": "Terkirim",
+      "sentAt": "2026-10-21T13:30:41.486Z",
+      "htmlContent": "\n      <div style=\"font-family: 'Plus Jakarta Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #E8DFD0; border-radius: 12px; background: #FFFFFF;\">\n        <div style=\"border-bottom: 2px solid #718776; padding-bottom: 12px; margin-bottom: 20px;\">\n          <h2 style=\"color: #34483D; margin: 0;\">Praktik Mandiri Mantri</h2>\n          <p style=\"color: #747C75; margin: 4px 0 0 0; font-size: 14px;\">Mantri Husada, S.Kep., Ns. - Pelayanan Ramah & Terpercaya</p>\n        </div>\n        <p>Yth. Bpk/Ibu <strong>Ahmad Fauzi</strong>,</p>\n        <p>Pengajuan antrean pelayanan kesehatan Anda telah berhasil kami terima. Berikut adalah rincian pengajuan Anda:</p>\n        <div style=\"background: #F7F5EF; padding: 16px; border-radius: 8px; margin: 16px 0; border: 1px solid #E8DFD0;\">\n          <p style=\"margin: 4px 0;\"><strong>Kode Pengajuan:</strong> <span style=\"color: #34483D; font-size: 16px; font-weight: bold; font-family: monospace;\">PA2610210006</span></p>\n          <p style=\"margin: 4px 0;\"><strong>Layanan:</strong> Pemeriksaan Umum</p>\n          <p style=\"margin: 4px 0;\"><strong>Status:</strong> <span style=\"background: #FFF3CD; color: #856404; padding: 2px 8px; border-radius: 4px; font-weight: bold;\">Menunggu Persetujuan Mantri</span></p>\n          <p style=\"margin: 4px 0;\"><strong>Waktu Pengajuan:</strong> 21/10/2026, 13.30.41</p>\n        </div>\n        <p><em>Pemberitahuan Penting:</em> Nomor antrean resmi akan diterbitkan segera setelah Mantri menyetujui jadwal pelayanan Anda. Kami akan mengirimkan email konfirmasi lanjutan berisikan nomor antrean resmi.</p>\n        <p>Anda juga dapat memantau status antrean secara langsung melalui aplikasi web dengan kode pengajuan di atas.</p>\n        <hr style=\"border: none; border-top: 1px solid #E8DFD0; margin: 24px 0;\" />\n        <p style=\"font-size: 12px; color: #747C75; text-align: center;\">Praktik Mandiri Mantri &bull; Jl. Kesehatan No. 12, Kel. Sejahtera, Kec. Husada &bull; Telp: 0812-3456-7890</p>\n      </div>\n    "
+    },
+    {
+      "id": "email-log-1",
+      "recipient": "siti@gmail.com",
+      "recipientName": "Siti Aisyah",
+      "subject": "Konfirmasi Pengajuan Antrean - Praktik Mandiri Mantri",
+      "templateType": "APPLICATION_SUBMITTED",
+      "status": "Terkirim",
+      "sentAt": "2026-10-21T12:55:14.418Z",
+      "htmlContent": "\n        <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #E8DFD0; border-radius: 8px;\">\n          <h2 style=\"color: #34483D;\">Praktik Mandiri Mantri</h2>\n          <p>Yth. <strong>Siti Aisyah</strong>,</p>\n          <p>Pengajuan antrean Anda dengan kode <strong>PA2506170003</strong> telah kami terima dan saat ini sedang menunggu persetujuan mantri.</p>\n          <p>Layanan: Pemeriksaan Umum</p>\n          <p>Anda akan menerima email pemberitahuan berikutnya setelah pengajuan disetujui atau diproses.</p>\n          <hr style=\"border: none; border-top: 1px solid #E8DFD0; margin: 20px 0;\" />\n          <p style=\"font-size: 12px; color: #747C75;\">Praktik Mandiri Mantri &copy; 2025</p>\n        </div>\n      "
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act-1792589472396",
+      "action": "Persetujuan Antrean",
+      "details": "Pengajuan PA2610210006 disetujui. Diterbitkan antrean A006 untuk Ahmad Fauzi",
+      "actor": "Mantri Husada, S.Kep., Ns.",
+      "timestamp": "2026-10-21T13:31:12.396Z",
+      "category": "APPLICATION"
+    },
+    {
+      "id": "act-1",
+      "action": "Inisialisasi Sistem",
+      "details": "Sistem antrean klinik siap melayani pasien",
+      "actor": "Sistem",
+      "timestamp": "2026-10-21T10:10:14.418Z",
+      "category": "SETTINGS"
+    }
+  ],
+  "testResults": [
+    {
+      "id": 1,
+      "category": "Pendaftaran Pasien",
+      "title": "Formulir dengan input valid",
+      "step": "Isi nama, email valid, nomor HP, pilih layanan aktif, centang persetujuan, lalu submit",
+      "expectedResult": "HTTP 201 Created, kode pengajuan PAxxxx diterbitkan, status \"Menunggu Persetujuan\"",
+      "actualResult": "Pengajuan berhasil disimpan dan kode unik diterbitkan seketika",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 2,
+      "category": "Validasi Frontend & Backend",
+      "title": "Formulir kosong",
+      "step": "Kirim formulir tanpa mengisi field wajib nama dan email",
+      "expectedResult": "HTTP 400 Bad Request dengan pesan error spesifik dan pengiriman diblokir",
+      "actualResult": "Ditolak dengan pesan \"Nama lengkap wajib diisi\"",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 3,
+      "category": "Validasi Frontend & Backend",
+      "title": "Format email salah",
+      "step": "Kirim formulir dengan string email tanpa simbol @ atau domain",
+      "expectedResult": "HTTP 400 Bad Request, rejected dengan peringatan email aktif valid",
+      "actualResult": "Validasi regex backend dan HTML5 memblokir submit",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 4,
+      "category": "Persistensi Data",
+      "title": "Pengajuan berhasil tersimpan",
+      "step": "Submit formulir valid lalu cek isi database file data/database.json",
+      "expectedResult": "Record pengajuan baru tersimpan persisten lengkap dengan timestamp dan riwayat",
+      "actualResult": "Record tersimpan di database file dengan aman",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 5,
+      "category": "Dashboard Admin",
+      "title": "Pengajuan muncul di dashboard",
+      "step": "Buka dashboard admin segera setelah pengajuan dibuat",
+      "expectedResult": "Tabel pengajuan terbaru langsung menampilkan data pasien dan counter pending bertambah",
+      "actualResult": "Data langsung tampil di tabel antrean pending dengan badge Menunggu",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 6,
+      "category": "Notifikasi Admin",
+      "title": "Notifikasi admin muncul",
+      "step": "Verifikasi dropdown lonceng notifikasi admin setelah pendaftaran baru",
+      "expectedResult": "Badge angka belum dibaca bertambah + entri notifikasi baru muncul",
+      "actualResult": "Badge lonceng menyala dengan rincian nama dan kode pengajuan",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 7,
+      "category": "Alur Persetujuan",
+      "title": "Persetujuan berhasil",
+      "step": "Admin menekan tombol \"Setujui\" pada pengajuan berstatus Menunggu Persetujuan",
+      "expectedResult": "Status berubah menjadi \"Disetujui\", nomor antrean resmi dibuat, email dikirim",
+      "actualResult": "Status terupdate dan nomor resmi Axxx diterbitkan seketika",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 8,
+      "category": "Alur Penolakan",
+      "title": "Penolakan memerlukan alasan",
+      "step": "Admin mencoba menolak tanpa mengisi dialog alasan",
+      "expectedResult": "Sistem menolak aksi dengan validasi \"Alasan penolakan pengajuan wajib diisi\"",
+      "actualResult": "Validasi modal mewajibkan pengisian alasan sebelum proses",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 9,
+      "category": "Sistem Nomor Antrean",
+      "title": "Nomor antrean dibuat setelah persetujuan",
+      "step": "Cek nomor antrean pasien saat masih Menunggu vs setelah Disetujui",
+      "expectedResult": "Saat menunggu belum ada nomor; nomor Axxx hanya terbit setelah persetujuan mantri",
+      "actualResult": "Nomor resmi baru dibangkitkan pada transaksi persetujuan mantri",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 10,
+      "category": "Integritas Nomor",
+      "title": "Nomor antrean tidak ganda",
+      "step": "Setujui beberapa pengajuan berturut-turut pada hari yang sama",
+      "expectedResult": "Nomor berurutan tanpa loncat atau duplikasi (A001, A002, dst)",
+      "actualResult": "Nomor antrean berurutan secara konsisten dan unik per tanggal",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 11,
+      "category": "Konkurensi & Mutex",
+      "title": "Dua persetujuan bersamaan tetap konsisten",
+      "step": "Simulasikan dua permintaan persetujuan simultan dengan acquireLock mutex",
+      "expectedResult": "Lock mencegah race-condition; kedua pengajuan mendapat nomor berbeda berurutan",
+      "actualResult": "Mekanisme mutex atomik mencegah duplicate counter dan race condition",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 12,
+      "category": "Notifikasi Email",
+      "title": "Email admin dan pasien diproses dengan benar",
+      "step": "Periksa log pengiriman email setelah pendaftaran dan persetujuan",
+      "expectedResult": "Email log mencatat alamat penerima, subjek, konten HTML, dan status Terkirim",
+      "actualResult": "Email terkirim tercatat rapi di log dan dapat ditinjau isinya",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 13,
+      "category": "Resiliensi Sistem",
+      "title": "Email gagal tanpa menghilangkan data antrean",
+      "step": "Simulasikan kegagalan jaringan pengiriman email transaksional",
+      "expectedResult": "Data antrean tetap tersimpan dan tidak revert/batal; log mencatat status pengiriman",
+      "actualResult": "Transaksi antrean tetap aman di database meski email mengalami error",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 14,
+      "category": "Keamanan Autentikasi",
+      "title": "Login admin dengan data benar dan salah",
+      "step": "Coba login dengan password salah, lalu dengan kredensial benar",
+      "expectedResult": "Password salah: HTTP 401 Ditolak; Password benar: HTTP 200 + token sesi",
+      "actualResult": "Password di-hash dengan PBKDF2/SHA-512; login ditolak jika keliru",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 15,
+      "category": "Otorisasi Endpoint",
+      "title": "Akses dashboard tanpa autentikasi ditolak",
+      "step": "Kirim HTTP request ke /api/admin/dashboard tanpa token Authorization Bearer",
+      "expectedResult": "HTTP 401 Unauthorized \"Akses ditolak: Autentikasi diperlukan\"",
+      "actualResult": "Middleware requireAdmin memblokir semua request tanpa token sah",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 16,
+      "category": "Pengelolaan Antrean Aktif",
+      "title": "Perubahan status antrean berhasil",
+      "step": "Ubah antrean: Panggil -> Sedang Dilayani -> Selesai / Dilewati",
+      "expectedResult": "Status diperbarui di database beserta waktu kejadian dan riwayat pelacakan",
+      "actualResult": "Transisi status terekam dengan timestamp dan call counter akurat",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 17,
+      "category": "Pencarian & Filter",
+      "title": "Pencarian dan filter bekerja",
+      "step": "Gunakan filter status dan input pencarian teks pada tabel pengajuan dan antrean",
+      "expectedResult": "Tabel menampilkan baris yang sesuai dengan parameter filter secara presisi",
+      "actualResult": "Filter status dan text search instan menyaring baris yang cocok",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 18,
+      "category": "Persistensi Server",
+      "title": "Data bertahan setelah refresh",
+      "step": "Muat ulang halaman browser (F5) setelah menambah data baru",
+      "expectedResult": "Data tetap ada, konsisten, dan sinkron dengan file database lokal",
+      "actualResult": "Data tersimpan di data/database.json dan tetap utuh setelah refresh",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 19,
+      "category": "Pelaporan Medis",
+      "title": "Laporan sesuai database",
+      "step": "Bandingkan agregasi laporan dengan perhitungan total record di database",
+      "expectedResult": "Angka total, disetujui, ditolak, dan selesai cocok 100% tanpa manipulasi angka",
+      "actualResult": "Perhitungan dinamis dari database menghasilkan angka yang identik",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    },
+    {
+      "id": 20,
+      "category": "Responsivitas Antarmuka",
+      "title": "Tampilan responsif di desktop dan ponsel",
+      "step": "Uji viewport desktop (1440px) dan mobile smartphone (375px)",
+      "expectedResult": "Layout adaptif: formulir fleksibel, sidebar dashboard collapse di mobile",
+      "actualResult": "Komponen Tailwind responsif dengan drawer mobile dan card layout rapi",
+      "status": "Lulus",
+      "testedAt": "21/10/2026, 13.10.24"
+    }
+  ]
+}
