@@ -8,8 +8,18 @@ interface PatientFormProps {
   onOpenCheckStatus: () => void;
 }
 
+const DEFAULT_SERVICES: ServiceItem[] = [
+  { id: 'srv-1', name: 'Pemeriksaan Umum', description: 'Pemeriksaan keluhan umum, tensi darah, konsultasi fisik & resep.', estimatedMinutes: 15, price: 35000, isActive: true },
+  { id: 'srv-2', name: 'Konsultasi Keluarga', description: 'Konsultasi kesehatan keluarga, gizi & penanganan penyakit.', estimatedMinutes: 20, price: 40000, isActive: true },
+  { id: 'srv-3', name: 'Cek Gula Darah', description: 'Pemeriksaan kadar gula darah digital akurat.', estimatedMinutes: 10, price: 20000, isActive: true },
+  { id: 'srv-4', name: 'Cek Kolesterol', description: 'Pemeriksaan kadar kolesterol total darah cepat.', estimatedMinutes: 10, price: 25000, isActive: true },
+  { id: 'srv-5', name: 'Cek Asam Urat', description: 'Skrining kadar asam urat dalam darah.', estimatedMinutes: 10, price: 20000, isActive: true },
+  { id: 'srv-6', name: 'Perawatan Luka Ringan', description: 'Pembersihan luka, antiseptik & perban steril.', estimatedMinutes: 20, price: 30000, isActive: true },
+  { id: 'srv-7', name: 'Suntik Vitamin / Imunitas', description: 'Injeksi vitamin daya tahan tubuh.', estimatedMinutes: 15, price: 45000, isActive: true }
+];
+
 export const PatientForm: React.FC<PatientFormProps> = ({ onSuccess, onOpenCheckStatus }) => {
-  const [services, setServices] = useState<ServiceItem[]>([]);
+  const [services, setServices] = useState<ServiceItem[]>(DEFAULT_SERVICES);
   const [settings, setSettings] = useState<ClinicSettings | null>(null);
   const [todayStats, setTodayStats] = useState<any>(null);
   const [loadingInitial, setLoadingInitial] = useState(true);
@@ -18,7 +28,7 @@ export const PatientForm: React.FC<PatientFormProps> = ({ onSuccess, onOpenCheck
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [serviceId, setServiceId] = useState('');
+  const [serviceId, setServiceId] = useState('srv-1');
   const [agreed, setAgreed] = useState(false);
 
   // Status & validation states
@@ -33,12 +43,16 @@ export const PatientForm: React.FC<PatientFormProps> = ({ onSuccess, onOpenCheck
           api.getSettings(),
           api.getServices()
         ]);
-        setSettings(settingsRes.settings);
-        setTodayStats(settingsRes.todayStats);
-        const activeServices = servicesRes.filter(s => s.isActive);
-        setServices(activeServices);
-        if (activeServices.length > 0) {
-          setServiceId(activeServices[0].id);
+        if (settingsRes && settingsRes.settings) {
+          setSettings(settingsRes.settings);
+          setTodayStats(settingsRes.todayStats);
+        }
+        if (servicesRes && servicesRes.length > 0) {
+          const activeServices = servicesRes.filter(s => s.isActive);
+          if (activeServices.length > 0) {
+            setServices(activeServices);
+            setServiceId(prev => prev || activeServices[0].id);
+          }
         }
       } catch (err: any) {
         console.error('Failed to load initial data', err);
